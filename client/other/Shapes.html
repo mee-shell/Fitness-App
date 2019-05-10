@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- react library -->
+  <script src="https://unpkg.com/react@15.5.4/dist/react.js"> </script>
+  <!-- react dom library -->
+  <script src="https://unpkg.com/react-dom@15.5.4/dist/react-dom.js"> </script>
+  <!-- babel library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"> </script>
+  <link rel="stylesheet" href="main.css">
+  <title>class styling components PRACTICE</title>
+</head>
+<body>
+  <div id="app">
+     react has not rendered yet
+  </div>
+  <script type="text/babel">
+    // capitalize components
+    var Circle = function(){
+      return(
+        <h1 className="circle"> Circle </h1>
+      );
+    }
+    // doesnt work mixed up????
+  var Square = function (){
+    var squareColor={
+      width: 100,
+      height: 100,
+      backgroundColor: "green",
+    }
+    return (
+      <h1 styling={squareColor}> Square </h1>
+    );
+  }
+  var Rectangle = function(){
+    return(
+      <h1 className="rectangle"> Rectangle </h1>
+    );
+  }
+
+
+
+    // rendering components
+    ReactDOM.render(
+    // react what , react where
+    <div> <Circle/><Square/><Rectangle/></div> , document.getElementById("app"));
+
+  </script>
+</body>
+</html>

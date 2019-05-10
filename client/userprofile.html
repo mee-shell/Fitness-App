@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<!-- react library -->
+		<script src="https://unpkg.com/react@15.5.4/dist/react.js"> </script>
+		<!-- react dom library -->
+		<script src="https://unpkg.com/react-dom@15.5.4/dist/react-dom.js"> </script>
+		<!-- babel library -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"> </script>
+		<title>Slack AngularJS</title>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+		<link rel= "stylesheet" href="bootstrap.css">
+		<link rel="stylesheet" href="styles.css">
+		<!-- <base href="/"> -->
+	</head>
+	<body>
+<!-- ..................Logo/home button + Search Bar .........  -->
+		<div class="search">
+			<a href="./index.html">
+				<i class="fas fa-spa"></i>
+			</a>
+				<input type="text" placeholder="Search....">
+		</div>
+<!-- .......................Profile button ........... -->
+		<div class="profile">
+			<span class="title">Profile</span>
+			<a href="http://localhost:3000/api/logout">Logout</a>
+		</div>
+
+<!-- .......................main part ........... -->
+<div class="container">
+	<i class="fas fa-user-circle"></i>
+	<form>
+		User <br/>
+		<input type="text" placeholder="First Name">
+		<input type="text" placeholder="Last Name">
+		<input type="text" placeholder="date of birth: DD/MM/YYYY">
+		<input type="text" placeholder="Email">
+		 <hr/>
+		Address <br/>
+		<input type="text" placeholder="Street">
+		<input type="text" placeholder="Street Number">
+		<input type="text" placeholder="Post Code">
+		<input type="text" placeholder="Country">
+		<hr/>
+		State <br/>
+		<input type="text" placeholder="Height">
+		<input type="text" placeholder="Weight">
+		<input type="text" placeholder="Job">
+		<input type="text" placeholder="Active Time per Week in hours">
+		<input type="text" placeholder="Sport">
+		<hr/>
+		Injury <br/>
+		<input type="text" placeholder="Injury">
+		<input type="text" placeholder="Injury date">
+		<!-- add pain scale  -->
+		<input type="text" placeholder="Previous Injuries">
+		<input type="text" placeholder="Job">
+
+		<button type="submit"> Submit </button>
+
+	</form>
+</div>
+<!-- .......................about us- contact .............. -->
+	<span class="about">
+				<a href="./contact.html">About us | Contact</a>
+	</span>
+
+		<script src="script.js"></script>
+	</body>
+</html>

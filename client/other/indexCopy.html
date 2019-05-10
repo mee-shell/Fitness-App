@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<!-- react library -->
+		<script src="https://unpkg.com/react@15.5.4/dist/react.js"> </script>
+		<!-- react dom library -->
+		<script src="https://unpkg.com/react-dom@15.5.4/dist/react-dom.js"> </script>
+		<!-- babel library -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"> </script>
+		<title>Slack AngularJS</title>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+		<link rel= "stylesheet" href="bootstrap.css">
+		<link rel="stylesheet" href="styles.css">
+		<!-- <base href="/"> -->
+	</head>
+	<body>
+<!-- ..................Logo/home button + Search Bar .........  -->
+
+		<div class="search">
+			<a href="./index.html">
+				<i class="fas fa-spa"></i>
+			</a>
+			<a href="./help.html">
+			<i class="fas fa-question-circle"></i>
+			</a>
+				<input class="searchInput" type="text" placeholder="Search....">
+		</div>
+<!-- .......................Profile button ........... -->
+		<div class="profile">
+			<a href="./myprofile.html"<span class="title">Profile</span>
+			<a href="http://localhost:3000/api/logout">Logout</a>
+		</div>
+
+<!-- .......................text ........... -->
+<p> Summary of what this is about:
+	Unique App for physio therapists in order to find the best trainings plan for their clients' injury recovery.
+</p>
+
+<!-- .......................stages ........... -->
+<nav class="ribbon ribbon--alpha ribbon--shadow ribbon--gradient" role="navigation" aria-label="breadcrumbs">
+  <a class="ribbon__element" href="./myprofile.html" target="_blank">1.</a>
+  <a class="ribbon__element" href="./userprofile.html" target="_blank">2.</a>
+  <a class="ribbon__element" href="./training.html" aria-current="page" target="_blank">3.</a>
+	  <a class="ribbon__element" href="./biDashboard.html" aria-current="page" target="_blank">4.</a>
+	<!-- <a class="ribbon__element" href="./biDashboard.html" aria-current="page" target="_blank">4.</a> -->
+</nav>
+
+
+<!-- import component : shapes  including links to the different pages -->
+<!-- <div id="app">
+	 react has not rendered yet
+</div>
+<script type="text/babel">
+	// capitalize components
+	var Red = function(){
+      var oneStyle ={
+				height: 0,
+			  width: 0,
+			  borderLeft: 100 solid red,
+			  borderRight: 100 solid transparent,
+			  borderBottom: 100 solid transparent,
+			  borderTop: 100 solid transparent
+      }
+      return(
+        <h1 style={oneStyle}> Red </h1>
+      );
+    }
+  var Orange = function (){
+    var twoStyle ={
+      height: 50,
+      width:150,
+      backgroundColor: "orange",
+      margin: 20,
+      padding: 30,
+      borderRadius: 10
+    }
+    return (
+      <h1 style={twoStyle}> Orange </h1>
+    );
+  }
+  var Yellow = function(){
+    var threeStyle ={
+      height: 50,
+      width:150,
+      backgroundColor: "yellow",
+      margin: 20,
+      padding: 30,
+      borderRadius: 10
+    }
+    return(
+      <h1 style={threeStyle}> Yellow </h1>
+    );
+  }
+  var Purple = function (){
+    var fourStyle ={
+      height: 50,
+      width:150,
+      backgroundColor: "purple",
+      margin: 20,
+      padding: 30,
+      borderRadius: 10
+    }
+    return(
+      <h1 style={fourStyle}> Purple </h1>
+    );
+  }
+
+
+    // rendering components
+    ReactDOM.render(
+    // react what , react where
+    <div> <Red/><Orange/><Yellow/><Purple/></div> , document.getElementById("app"));
+</script> -->
+<!-- .......................text  ........... -->
+<p> Why this is awesome:
+	Create customized traninig plans for your client which a re perfectly suited to his/her injury.
+	No matter what rehabilitation stage they are in.
+</p>
+
+
+<!-- .......................about us- contact .............. -->
+	<span class="about">
+				<a href="./contact.html">About us | Contact</a>
+	</span>
+
+		<script src="script.js"></script>
+	</body>
+</html>
